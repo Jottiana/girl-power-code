@@ -38,7 +38,7 @@
 
 .parents-button {
   font-family: var(--font-family-button);
-  background: #a2dbb1;
+  background: var(--background-color-button);
   color: rgb(0, 0, 0);
   border: none;
   padding: 10px 20px;
@@ -51,5 +51,5 @@
 }
 
 .parents-button:hover {
-  background-color: #5eb776;
+  background-color: var(--background-color-button-hover);
 }

@@ -18,6 +18,8 @@ body {
   --font-family-button: "Poppins", sans-serif;
   --font-primary-color: black;
   --font-secondary-color: rgba(0, 0, 0, 0.414);
+  --background-color-button: #a2dbb1;
+  --background-color-button-hover: #5eb776;
   height: 100vh;
   background-size: cover;
   background-position: top;
