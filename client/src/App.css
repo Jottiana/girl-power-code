@@ -16,13 +16,25 @@ body {
   --font-family-title: "Fredoka", sans-serif;
   --font-family-paragraph: "Nunito", sans-serif;
   --font-family-button: "Poppins", sans-serif;
-
+  --font-primary-color: black;
+  --font-secondary-color: rgba(0, 0, 0, 0.414);
   height: 100vh;
   background-size: cover;
   background-position: top;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 1fr;
-  align-content: start;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding: 1rem;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
 }
