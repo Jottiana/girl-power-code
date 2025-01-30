@@ -1,0 +1,74 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  padding: 20px;
+}
+
+.home-title,
+.home-description {
+  color: var(--font-primary-color);
+}
+
+.home-title {
+  line-height: normal;
+  font-size: 1.7rem;
+  font-family: var(--font-family-title);
+  margin-bottom: 4rem;
+}
+
+.home-description {
+  font-size: 1rem;
+  font-family: var(--font-family-paragraph);
+  margin-bottom: 2rem;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-button {
+  border-radius: 15px;
+  background: var(--background-color-button);
+  box-shadow: 4px 4px 4px 0px rgba(235, 138, 227, 0.25);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-family-button);
+  color: var(--font-primary-color);
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  width: 300px;
+}
+
+.home-button:hover {
+  background-color: var(--background-color-button-hover);
+}
+
+.home-button:focus {
+  outline: 3px solid #ff4081;
+}
+
+@media screen and (min-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-description {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+
+  .home-buttons {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
