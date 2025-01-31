@@ -47,7 +47,7 @@
 | `INT PRIMARY KEY AUTO_INCREMENT` | `INT NOT NULL` (FK → game.id) | `INT NOT NULL` (FK → category.id) |
 
 #### `woman`
-| id | name | bio | image_url | wiki_link |
+| id | woman_name | bio | image_url | wiki_link |
 |----|------|-----|-----------|-----------|
 | `INT PRIMARY KEY AUTO_INCREMENT` | `VARCHAR(100) NOT NULL` | `TEXT` | `VARCHAR(255)` | `VARCHAR(255)` |
 

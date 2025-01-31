@@ -24,7 +24,7 @@ CREATE TABLE game_category (
 
 CREATE TABLE woman (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
+    woman_name VARCHAR(100) NOT NULL,
     bio TEXT,
     image_url VARCHAR(255),
     wiki_link VARCHAR(255)
