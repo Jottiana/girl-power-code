@@ -1,0 +1,22 @@
+.women-container {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.women-title {
+  font-family: var(--font-family-title);
+  font-size: 2rem;
+  margin-bottom: 8rem;
+  color: var(--font-primary-color);
+}
+
+.women-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
