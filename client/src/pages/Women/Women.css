@@ -6,9 +6,15 @@
 
 .women-title {
   font-family: var(--font-family-title);
-  font-size: 2rem;
-  margin-bottom: 8rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
   color: var(--font-primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .women-title {
+    font-size: 2rem;
+  }
 }
 
 .women-grid {
