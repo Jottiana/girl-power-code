@@ -17,21 +17,15 @@
 .game-card__title {
   font-family: var(--font-family-title);
   font-size: 1.5rem;
-  color: #222;
   margin: 0.5rem 0;
 }
 
 .game-card__description {
   font-family: var(--font-family-paragraph);
   font-size: 1rem;
-  color: #555;
   padding: 0 1rem;
 }
 
 .game-card__link {
   margin-top: 10px;
 }
-
-/* .game-card__link::after {
-  content: "\F1C5";
-} */

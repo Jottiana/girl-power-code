@@ -37,19 +37,8 @@
 }
 
 .parents-button {
-  font-family: var(--font-family-button);
-  background: var(--background-color-button);
-  color: #fff;
-  border: none;
   padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   display: inline-block;
-  text-align: center;
-}
-
-.parents-button:hover {
-  background-color: var(--background-color-button-hover);
 }

@@ -8,8 +8,7 @@
   padding: 20px;
 }
 
-.home-title,
-.home-description {
+.home-title {
   color: var(--font-primary-color);
 }
 
@@ -18,12 +17,6 @@
   font-size: 1.7rem;
   font-family: var(--font-family-title);
   margin-bottom: 4rem;
-}
-
-.home-description {
-  font-size: 1rem;
-  font-family: var(--font-family-paragraph);
-  margin-bottom: 2rem;
 }
 
 .home-buttons {
@@ -35,22 +28,9 @@
 }
 
 .home-button {
-  border-radius: 15px;
-  background: var(--background-color-button);
-  box-shadow: 4px 4px 4px 0px rgba(235, 138, 227, 0.25);
   padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: var(--font-family-button);
-  color: var(--font-primary-color);
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease-in-out;
+  font-size: 1.4rem;
   width: 300px;
-}
-
-.home-button:hover {
-  background-color: var(--background-color-button-hover);
 }
 
 .home-button:focus {
@@ -60,11 +40,6 @@
 @media screen and (min-width: 768px) {
   .home-title {
     font-size: 2.5rem;
-  }
-
-  .home-description {
-    font-size: 1.2rem;
-    margin-bottom: 5rem;
   }
 
   .home-buttons {

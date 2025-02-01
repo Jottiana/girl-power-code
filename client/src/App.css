@@ -46,6 +46,32 @@ body {
   width: 100%;
 }
 
+.title {
+  font-family: var(--font-family-title);
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: var(--font-primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  font-family: var(--font-family-paragraph);
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+}
+
 footer {
   margin-top: auto;
   text-align: center;
@@ -63,4 +89,25 @@ footer {
 .link:hover {
   color: var(--link-color-hover);
   text-decoration: none;
+}
+
+.button {
+  font-family: var(--font-family-button);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--background-color-button);
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  outline: 2px solid transparent;
+}
+
+.button:hover {
+  background-color: var(--background-color-button-hover);
+  color: #000000;
+}
+
+.button:focus {
+  outline: 2px solid var(--primary-color);
 }

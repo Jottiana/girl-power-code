@@ -18,7 +18,7 @@ function Navbar({ handleClick }: { handleClick?: () => void }) {
         <Link
           onClick={handleClick}
           to="/parents"
-          className="parents-button"
+          className="parents-button button"
           aria-current={
             window.location.pathname === "/parents" ? "page" : undefined
           }
