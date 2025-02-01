@@ -7,37 +7,60 @@
 body {
   font-size: 16px;
   line-height: 1.7;
-  color: #eee;
   margin: 0;
 }
 
 #root {
+  --primary-color: #709dd9;
+  --secondary-color: #98b9e4;
+
   --font-family-website-name: "Orbitron", sans-serif;
   --font-family-title: "Fredoka", sans-serif;
   --font-family-paragraph: "Nunito", sans-serif;
   --font-family-button: "Poppins", sans-serif;
   --font-primary-color: black;
   --font-secondary-color: rgba(0, 0, 0, 0.414);
-  --background-color-button: #a2dbb1;
-  --background-color-button-hover: #5eb776;
-  --link-color: #eb8ae3;
+  --background-color-button: var(--primary-color);
+  --background-color-button-hover: var(--secondary-color);
+  --link-color: var(--primary-color);
+  --link-color-hover: var(--secondary-color);
   height: 100vh;
   background-size: cover;
   background-position: top;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 1rem;
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background: linear-gradient(
+    110deg,
+    #6976cdd3 -10.82%,
+    #bcdede87 43.13%,
+    #34dfe57e 68.88%,
+    #6889edb6 95.85%
+  );
   width: 100%;
 }
 
 footer {
   margin-top: auto;
   text-align: center;
+}
+
+.link {
+  color: var(--link-color);
+  font-family: var(--font-family-paragraph);
+  font-size: 1rem;
+  color: var(--link-color);
+  font-weight: bold;
+  text-underline-offset: 4px;
+}
+
+.link:hover {
+  color: var(--link-color-hover);
+  text-decoration: none;
 }

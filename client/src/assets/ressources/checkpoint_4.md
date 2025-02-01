@@ -32,12 +32,12 @@
 
 ### **📌 Structure des Tables**
 #### `category`
-| id | name |
+| id | category_name |
 |----|------|
 | `INT PRIMARY KEY AUTO_INCREMENT` | `VARCHAR(100) NOT NULL` |
 
 #### `game`
-| id | title | description | url |
+| id | title | game_description | game_url |
 |----|-------|------------|-----|
 | `INT PRIMARY KEY AUTO_INCREMENT` | `VARCHAR(100) NOT NULL` | `TEXT` | `VARCHAR(255) NOT NULL` |
 

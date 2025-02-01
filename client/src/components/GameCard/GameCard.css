@@ -1,49 +1,37 @@
-.woman-card {
+.game-card {
   background: #fff;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 400px;
 }
 
-.woman-card:hover {
+.game-card:hover {
   transform: translateY(-5px);
 }
 
-.woman-card__image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .woman-card__image {
-    width: 300px;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.woman-card__name {
+.game-card__title {
   font-family: var(--font-family-title);
   font-size: 1.5rem;
   color: #222;
   margin: 0.5rem 0;
 }
 
-.woman-card__bio {
+.game-card__description {
   font-family: var(--font-family-paragraph);
   font-size: 1rem;
-  color: var(--font-primary-color);
+  color: #555;
   padding: 0 1rem;
 }
 
-.woman-card__link {
+.game-card__link {
   margin-top: 10px;
 }
+
+/* .game-card__link::after {
+  content: "\F1C5";
+} */

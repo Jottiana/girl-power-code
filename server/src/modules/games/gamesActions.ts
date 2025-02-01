@@ -32,8 +32,8 @@ const add: RequestHandler = async (req, res, next) => {
   try {
     const newGame = {
       title: req.body.title,
-      description: req.body.description,
-      url: req.body.url,
+      game_description: req.body.game_description,
+      game_url: req.body.game_url,
     };
 
     const insertId = await gamesRepository.create(newGame);
@@ -47,17 +47,17 @@ const add: RequestHandler = async (req, res, next) => {
 const edit: RequestHandler = async (req, res, next) => {
   try {
     const gameId = Number(req.params.id);
-    const { title, description, url } = req.body;
+    const { title, game_description, game_url } = req.body;
 
-    if (!title || !description) {
+    if (!title || !game_description) {
       res.status(400).json({ error: "Le titre et la description sont requis" });
       return;
     }
 
     const updatedRows = await gamesRepository.update(gameId, {
       title,
-      description,
-      url,
+      game_description,
+      game_url,
     });
 
     if (updatedRows === 0) {

@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
+import Games from "./pages/Games/Games";
 import Home from "./pages/Home/Home";
 import Women from "./pages/Women/Women";
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/women",
         element: <Women />,
+      },
+      {
+        path: "/games",
+        element: <Games />,
       },
     ],
   },

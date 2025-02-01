@@ -25,9 +25,9 @@ const WomanCard = ({ woman }: { woman: Woman }) => {
           href={woman.wiki_link}
           target="_blank"
           rel="noopener noreferrer"
-          className="woman-card__link"
+          className="woman-card__link link"
         >
-          En savoir plus 🔗
+          En savoir plus
         </a>
       )}
     </div>

@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(246, 243, 243);
+  background-color: #fff;
   transition: 0.5s;
   height: auto;
 }
@@ -29,7 +29,7 @@
 .back-to-home-link {
   font-family: var(--font-family-website-name);
   text-decoration: none;
-  color: #eb8ae3;
+  color: #7d90d1;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -39,7 +39,7 @@
 .parents-button {
   font-family: var(--font-family-button);
   background: var(--background-color-button);
-  color: rgb(0, 0, 0);
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
