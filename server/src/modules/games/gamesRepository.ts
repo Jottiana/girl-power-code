@@ -5,15 +5,15 @@ import type { Result, Rows } from "../../../database/client";
 type Game = {
   id: number;
   title: string;
-  description: string;
-  url: string;
+  game_description: string;
+  game_url: string;
 };
 
 class GamesRepository {
   async create(game: Omit<Game, "id">) {
     const [result] = await databaseClient.query<Result>(
-      "INSERT INTO game (title, description, url) VALUES (?, ?, ?)",
-      [game.title, game.description, game.url],
+      "INSERT INTO game (title, game_description, game_url) VALUES (?, ?, ?)",
+      [game.title, game.game_description, game.game_url],
     );
 
     return result.insertId;
@@ -36,8 +36,8 @@ class GamesRepository {
 
   async update(id: number, game: Omit<Game, "id">) {
     const [result] = await databaseClient.query<Result>(
-      "UPDATE game SET title = ?, description = ?, url = ? WHERE id = ?",
-      [game.title, game.description, game.url, id],
+      "UPDATE game SET title = ?, game_description = ?, game_url = ? WHERE id = ?",
+      [game.title, game.game_description, game.game_url, id],
     );
 
     return result.affectedRows;

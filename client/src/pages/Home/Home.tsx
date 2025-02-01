@@ -9,26 +9,32 @@ const Home = () => {
       <h1 className="home-title">
         🚀 Explore, Joue, Code : Le futur de la tech commence avec toi !
       </h1>
-      <p className="home-description">
-        ✨ Découvre les femmes inspirantes qui ont marqué l'histoire de la tech
-        et apprends à coder en t'amusant !
+      <p className="description">
+        ✨ Bienvenue sur Girl Power Code !{" "}
+        <section>
+          {" "}
+          Ici, les jeunes filles curieuses découvrent l’univers passionnant de
+          l’informatique à travers des histoires inspirantes de femmes qui ont
+          changé le monde et des jeux ludiques pour apprendre à coder.{" "}
+        </section>
+        Parce que la tech, c’est aussi pour toi, lance-toi et explore ! 👩‍💻✨
       </p>
       <div className="home-buttons">
         <button
           type="button"
-          className="home-button"
+          className="home-button button"
           onClick={() => navigate("/women")}
           aria-label="Découvrir les femmes dans la tech"
         >
-          Les femmes dans la tech
+          Les femmes <br /> dans la tech
         </button>
         <button
           type="button"
-          className="home-button"
+          className="home-button button"
           onClick={() => navigate("/games")}
           aria-label="Apprendre à coder en jouant"
         >
-          Apprendre à coder en jouant
+          Joue <br /> et apprends à coder
         </button>
       </div>
     </div>
