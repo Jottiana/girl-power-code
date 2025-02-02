@@ -67,6 +67,7 @@ Cette application utilise le framework pédagogique JS-monorepo de la Wild Code 
 
 - 🔹 Ajouter une page de connexion admin  
 - 🔹 Améliorer l’interface utilisateur·ice (UI)  
+- 🔹 Ajouter une page d'informations destinée aux parent·e·s 
 - 🔹 Ajouter un mode sombre pour l’accessibilité  
 - 🔹 Intégrer plus de jeux interactifs  
 
