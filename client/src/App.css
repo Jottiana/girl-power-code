@@ -5,141 +5,135 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: #eee;
   margin: 0;
 }
 
 #root {
+  --primary-color: #709dd9;
+  --secondary-color: #98b9e4;
+
+  --font-family-website-name: "Orbitron", sans-serif;
+  --font-family-title: "Fredoka", sans-serif;
+  --font-family-paragraph: "Nunito", sans-serif;
+  --font-family-button: "Poppins", sans-serif;
+  --font-primary-color: black;
+  --font-secondary-color: rgba(0, 0, 0, 0.414);
+  --background-color-button: var(--primary-color);
+  --background-color-button-hover: var(--secondary-color);
+  --link-color: var(--primary-color);
+  --link-color-hover: var(--secondary-color);
   height: 100vh;
-  background-image: url("./assets/images/background.webp");
   background-size: cover;
   background-position: top;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 1fr;
-  align-content: start;
-  padding: 1rem;
-}
-
-header {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-
-.logo {
-  font-size: larger;
-}
-
-.navbar {
-  grid-column: -2 / -1;
-  grid-row: 1;
-}
-
-.navbar ul {
   display: flex;
-  justify-content: end;
-  gap: 1rem;
-  list-style: none;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #eee;
+.app-container {
   display: flex;
-  gap: 0.5rem;
-  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  background: linear-gradient(
+    110deg,
+    #6976cdd3 -10.82%,
+    #bcdede87 43.13%,
+    #34dfe57e 68.88%,
+    #6889edb6 95.85%
+  );
+  width: 100%;
 }
 
-.navbar a:hover {
-  scale: 110%;
-}
-
-.text-box {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  align-self: center;
-  text-align: center;
-}
-
-.block-primary {
-  text-transform: uppercase;
+.title {
+  font-family: var(--font-family-title);
+  font-size: 1.6rem;
   margin-bottom: 2rem;
+  color: var(--font-primary-color);
 }
 
-.block-primary-main {
-  font-size: 3em;
-  letter-spacing: 5px;
-  animation: blink 12s infinite;
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
-.block-primary-sub {
-  display: block;
-  font-weight: bold;
-  letter-spacing: 7px;
+h2,
+h3 {
+  font-family: var(--font-family-title);
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-  position: relative;
+h2 {
+  font-weight: 600;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+h3 {
+  font-weight: 500;
 }
 
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+input,
+textarea {
+  font-family: var(--font-family-button);
 }
 
-.btn-white {
-  background-color: #fff;
-  color: #777;
+.admin-container,
+.games-container,
+.women-container {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-family: var(--font-family-paragraph);
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
 }
 
 footer {
-  grid-column: -2 / -1;
-  grid-row: 1;
-  align-self: end;
-  text-align: right;
+  margin-top: auto;
+  text-align: center;
 }
 
-.wcs {
+.link {
+  color: var(--link-color);
+  font-family: var(--font-family-paragraph);
+  font-size: 1rem;
+  color: var(--link-color);
+  font-weight: bold;
+  text-underline-offset: 4px;
+}
+
+.link:hover {
+  color: var(--link-color-hover);
   text-decoration: none;
-  color: #ff1493ad;
 }
 
-.wcs:hover {
-  text-decoration: underline;
+.button {
+  font-family: var(--font-family-button);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--background-color-button);
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  outline: 2px solid transparent;
 }
 
-@keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    text-shadow: 0 0 5px #ff1493ad, 0 0 15px #eee, 0 0 20px #ff1493ad, 0 0 40px
-      #a00ac9, 0 0 60px #ff0000, 0 0 10px #970dc5, 0 0 98px #ff0000;
-    color: #fff;
-  }
+.button:hover {
+  background-color: var(--background-color-button-hover);
+  color: #000000;
+}
+
+.button:focus {
+  outline: 2px solid var(--primary-color);
 }

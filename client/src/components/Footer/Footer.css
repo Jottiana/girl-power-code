@@ -1,0 +1,31 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-link,
+.footer-copyright {
+  text-decoration: none;
+  color: var(--font-primary-color);
+  font-family: var(--font-family-paragraph);
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-link {
+    padding: .25rem;
+    transition: color 0.4s ease-in-out;
+  }
+  .footer-link:hover {
+    color: var(--font-secondary-color);
+  }
+}

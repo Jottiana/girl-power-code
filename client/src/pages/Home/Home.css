@@ -1,0 +1,49 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  padding: 20px;
+}
+
+.home-title {
+  color: var(--font-primary-color);
+}
+
+.home-title {
+  line-height: normal;
+  font-size: 1.7rem;
+  font-family: var(--font-family-title);
+  margin-bottom: 4rem;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-button {
+  padding: 12px 20px;
+  font-size: 1.4rem;
+  width: 300px;
+}
+
+.home-button:focus {
+  outline: 3px solid #ff4081;
+}
+
+@media screen and (min-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-buttons {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
