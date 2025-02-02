@@ -59,3 +59,19 @@ Cette application utilise le framework pédagogique JS-monorepo de la Wild Code 
 | `npm run dev`          | Démarre les deux serveurs (client et serveur) dans un seul terminal         |
 | `npm run check`        | Exécute les outils de validation (linting et formatage)                     |
 | `npm run test`         | Exécute les tests unitaires et d'intégration                                |
+
+
+---
+
+## 🚀 Prochaines améliorations
+
+- 🔹 Ajouter une page de connexion admin  
+- 🔹 Améliorer l’interface utilisateur·ice (UI)  
+- 🔹 Ajouter un mode sombre pour l’accessibilité  
+- 🔹 Intégrer plus de jeux interactifs  
+
+---
+
+## 📜 Licence
+
+Ce projet est sous licence **MIT** – voir le fichier [LICENSE](LICENSE) pour plus de détails.
