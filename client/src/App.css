@@ -59,6 +59,32 @@ body {
   }
 }
 
+h2,
+h3 {
+  font-family: var(--font-family-title);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+input,
+textarea {
+  font-family: var(--font-family-button);
+}
+
+.admin-container,
+.games-container,
+.women-container {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
 .description {
   font-size: 1rem;
   font-family: var(--font-family-paragraph);
